@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4RKBELLO PARALLAX EFFECT WEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class= "zoom">
+        <img src="mountain1.png" id="layer1">
+        <img src="mountain2.png" id="layer2">
+        <img src="text1.png" id="layer3">
+    </section>
+    <section class="content">
+        <h2>THIS IS M4RKBELLO PARALLAX EFFECT</h2>
+        <p>
+            <hr>
+            Being a web developer is more than just writing code and creating websites; it encompasses a unique blend of skills and qualities that define its essence.
+
+            <br><br>First and foremost, a web developer is a problem solver. They possess the ability to analyze complex challenges and find creative solutions. From debugging code to optimizing website performance, they tackle technical issues with determination and resourcefulness. Web developers thrive on overcoming obstacles and continuously learning to keep up with the rapidly evolving landscape of web technologies.
+            
+            <br><br>Secondly, a web developer is a bridge between design and functionality. They understand the importance of creating seamless user experiences by translating visual designs into interactive and user-friendly websites. They have an eye for aesthetics, ensuring that the website not only functions flawlessly but also delivers an appealing and engaging user interface. The ability to combine technical skills with design sensibilities allows web developers to bring ideas to life on the digital canvas.
+            
+            <br><br>Lastly, a web developer is a lifelong learner. They embrace the ever-changing nature of web development and actively seek out new technologies, frameworks, and coding languages to stay ahead. They are continuously expanding their skill set and staying updated with industry trends to deliver modern and innovative solutions. Web developers are curious, adaptable, and always open to acquiring new knowledge, making it an exciting and dynamic field to be a part of.
+            
+            <br><br>In essence, being a web developer means being a problem-solving, design-oriented, and constantly evolving professional. It's about harnessing technical expertise to create functional and visually appealing websites, all while adapting to the evolving demands of the digital world. The essence of being a web developer lies in the passion for crafting exceptional online experiences and making a positive impact in the virtual realm.<hr></p></section>
+    <hr>
+            <script type="text/javascript">
+        var layer1 =document.getElementById("layer1")
+        scroll = window.pageYOffset;
+        document.addEventListener("scroll", function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (100 + scroll/5) + "%";
+        });
+
+        var layer2 = document.getElementById("layer2")
+        scroll = window.pageYOffset;
+        document.addEventListener("scroll", function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + "%";
+            layer2.style.left = scroll/50 + "%";
+        });
+
+        var layer3 = document.getElementById("layer3")
+        scroll = window.pageYOffset;
+        document.addEventListener("scroll", function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + "%";
+            layer3.style.top = -scroll/20 + "%";
+        });
+    </script>
+</body>
+</html>

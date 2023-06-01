@@ -1,0 +1,63 @@
+
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.zoom{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+.zoom:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: lineaR-gradient(transparent, #ffffff);
+}
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+.zoom #layer1{
+    position: absolute;
+    left: 40%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+.zoom #layer2{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+}
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+.zoom #layer3{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: translateY(47%);
+}
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+.content{
+    padding: 100px;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+.content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+/* MARK BELLO PARALLEX EFFECT! DOWNLOAD IT AND HAVE A GOOD DAY!*/
+.content p{
+    font-size: 1.2em;
+    text-align: justify;
+}
